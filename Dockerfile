@@ -12,4 +12,4 @@ RUN adduser --disabled-password -q --home /data capistrano
 WORKDIR /data
 VOLUME /data
 USER capistrano
-ENTRYPOINT ["cap"]
+CMD /usr/local/bin/cap
